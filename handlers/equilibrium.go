@@ -7,18 +7,17 @@ import (
 	"omerozyilmaz/chemical-engineer-problem-solver/services"
 )
 
+
 func CalculateEquilibrium(w http.ResponseWriter, r *http.Request) {
-	var req models.MolRequest
-	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
-		http.Error(w, "Invalid request payload", http.StatusBadRequest)
-		return
-	}
+    var req models.EquilibriumRequest
+    if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+        http.Error(w, "Invalid request payload", http.StatusBadRequest)
+        return
+    }
 
+    result := services.CalculateEquilibrium(req)
+    resp := models.EquilibriumResponse{Result: result}
 
-	result := services.CalculateMol(req)
-
-
-	resp := models.MolResponse{Mol: result}
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(resp)
+    w.Header().Set("Content-Type", "application/json")
+    json.NewEncoder(w).Encode(resp)
 }
