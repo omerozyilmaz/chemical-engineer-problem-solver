@@ -122,9 +122,15 @@ The Darcy-Weisbach equation calculates the pressure loss in a pipe due to fricti
 ### **4. Reynolds Number**
 
 The Reynolds number determines whether the flow is laminar or turbulent:
-\[
+
 Re = \frac{\rho v D}{\mu}
-\]
+
+Variables:
+• Re: Reynolds number (dimensionless)
+• \rho: Fluid density (kg/m³)
+• v: Fluid velocity (m/s)
+• D: Pipe diameter (m)
+• \mu: Fluid dynamic viscosity (Pa·s)
 
 - **Variables:**
   - \(Re\): Reynolds number (dimensionless)
