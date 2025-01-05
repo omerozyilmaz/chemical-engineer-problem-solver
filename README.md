@@ -53,6 +53,95 @@
 
 ---
 
+# Chemical Engineer Problem Solver
+
+A Go-based backend project to solve fundamental chemical and fluid mechanics problems. This project includes handlers, services, and models for solving various engineering-related problems such as equilibrium calculations, mole calculations, and fluid mechanics operations.
+
+---
+
+## **Features**
+
+- **Chemical Equilibrium Calculations**
+- **Mole Calculations**
+- **Fluid Mechanics Formulas:**
+  - Bernoulli's Equation
+  - Continuity Equation
+  - Darcy-Weisbach Equation
+  - Reynolds Number
+
+---
+
+## **Fluid Mechanics Formulas**
+
+### **1. Bernoulli's Equation**
+
+The Bernoulli's equation represents the conservation of energy for a fluid flow:
+\[
+P_1 + \frac{1}{2} \rho v_1^2 + \rho g h_1 = P_2 + \frac{1}{2} \rho v_2^2 + \rho g h_2
+\]
+
+- **Variables:**
+  - \(P_1, P_2\): Pressure at points 1 and 2 (Pa)
+  - \(\rho\): Fluid density (kg/m³)
+  - \(v_1, v_2\): Fluid velocity at points 1 and 2 (m/s)
+  - \(h_1, h_2\): Height of the fluid at points 1 and 2 (m)
+  - \(g\): Gravitational acceleration (m/s²)
+
+---
+
+### **2. Continuity Equation**
+
+The continuity equation represents the conservation of mass in fluid mechanics:
+\[
+A_1 v_1 = A_2 v_2
+\]
+
+- **Variables:**
+  - \(A_1, A_2\): Cross-sectional areas at points 1 and 2 (m²)
+  - \(v_1, v_2\): Velocities at points 1 and 2 (m/s)
+
+---
+
+### **3. Darcy-Weisbach Equation**
+
+The Darcy-Weisbach equation calculates the pressure loss in a pipe due to friction:
+\[
+\Delta P = f \frac{L}{D} \frac{\rho v^2}{2}
+\]
+
+- **Variables:**
+  - \(\Delta P\): Pressure loss (Pa)
+  - \(f\): Friction factor (dimensionless)
+  - \(L\): Pipe length (m)
+  - \(D\): Pipe diameter (m)
+  - \(\rho\): Fluid density (kg/m³)
+  - \(v\): Fluid velocity (m/s)
+
+---
+
+### **4. Reynolds Number**
+
+The Reynolds number determines whether the flow is laminar or turbulent:
+\[
+Re = \frac{\rho v D}{\mu}
+\]
+
+- **Variables:**
+  - \(Re\): Reynolds number (dimensionless)
+  - \(\rho\): Fluid density (kg/m³)
+  - \(v\): Fluid velocity (m/s)
+  - \(D\): Pipe diameter (m)
+  - \(\mu\): Fluid dynamic viscosity (Pa·s)
+
+---
+
+## **How to Use**
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/chemical-engineer-problem-solver.git
+   ```
+
 ## Installation and Usage
 
 ### **Requirements**

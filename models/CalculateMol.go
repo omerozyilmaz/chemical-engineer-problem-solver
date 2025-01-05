@@ -6,5 +6,5 @@ type MolRequest struct {
 }
 
 type MolResponse struct {
-	Mol float64 `json:"mol"` 
+	Mol float64 `json:"mol"`
 }
