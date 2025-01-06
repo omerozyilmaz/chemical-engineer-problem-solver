@@ -10,7 +10,7 @@ func BernoulliEquation(p1, v1, h1, p2, v2, h2, rho, g float64) float64 {
 }
 
 // Continuity Equation
-func ContinuityEquation(a1, v1, a2 float64) float64 {
+func ContinuityEquations(a1, v1, a2 float64) float64 {
 	return (a1 * v1) / a2
 }
 
